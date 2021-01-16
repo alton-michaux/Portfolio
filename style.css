@@ -4,33 +4,27 @@
   padding: 0;
 }
 
+.grandparent {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-color: #050525;
+  background-blend-mode: lighten;
+}
+
+.parent {
+
+}
+
+.child {
+
+}
+
 @media screen and (min-width: 250px) {
-  svg {
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-}
-}
+
 
 @media screen and (min-width: 1024px) {
 
 }
-
-/* As hex codes */
-/*
-.color-primary-0 { color: #19232A }
-.color-primary-1 { color: #0E1113 }
-.color-primary-2 { color: #151B1F }
-.color-primary-3 { color: #2D3D48 }
-.color-primary-4 { color: #44627A }
-*/
-
-
-/* As RGBa codes */
-/*
-.rgba-primary-0 { color: rgba( 25, 35, 42,1) }
-.rgba-primary-1 { color: rgba( 14, 17, 19,1) }
-.rgba-primary-2 { color: rgba( 21, 27, 31,1) }
-.rgba-primary-3 { color: rgba( 45, 61, 72,1) }
-.rgba-primary-4 { color: rgba( 68, 98,122,1) }
-*/
