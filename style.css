@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .grandparent {
@@ -71,7 +71,13 @@
 }
 
 .svg {
+  display: flex;
   z-index: 1000;
+}
+
+.svg-1 {
+  z-index: 0;
+  background-color: rgb(13, 48, 122);
 }
 
 .footer {
@@ -79,10 +85,11 @@
   width: 100%;
   height: 30px;
   padding: 2px;
-  bottom: 7px;
+  bottom: 0;
   background-color: #050525;
   text-align: center;
   color: white;
+  border: solid 1.5px rgb(87, 82, 82);
 }
 
 @media screen and (max-width: 800px) {
@@ -124,6 +131,7 @@ body {
   bottom: 0;
   height: 40px;
   background-color: rgb(13, 48, 122);
+  border: none;
 }
 
 @media screen and (min-width: 800px) {
