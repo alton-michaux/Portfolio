@@ -31,10 +31,11 @@ const marquee = () => {
     for (i = 0; i < quotes.length; i++) {
         footer.innerHTML = "";
         footer.innerHTML += `${quotes[i].quote} -${quotes[i].author}`;
+        setInterval(marquee, 3000);
 }
 }
 
 //add event listener to footer that makes it rewrite innerHTML 
 window.addEventListener('load', () => {
-        setInterval(marquee(), 30000);
+        marquee();
 });
