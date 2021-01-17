@@ -5,6 +5,7 @@
 }
 
 .grandparent {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU);
@@ -15,11 +16,32 @@
 }
 
 .parent {
-
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 0px;
+  width: 900px;
+  height: 50px;
+  background-color: rgb(13, 48, 122);
 }
 
-.child {
+.nav-list {
+  display: flex;
+  list-style: none;
+  height: inherit;
+  border: solid 1.5px rgb(87, 82, 82);
+}
 
+.list-items {
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.list-items > a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 250px) {
