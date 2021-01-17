@@ -27,11 +27,14 @@ const quotes = [{
     }
 ];
 
-//add event listener to footer that makes it rewrite innerHTML 
-window.addEventListener('load', () => {
+const marquee = () => {
     for (i = 0; i < quotes.length; i++) {
         footer.innerHTML = "";
-        setInterval(function(){footer.innerHTML = quotes[0][i];}, 3000);
-        console.log(quotes[0][i]);
-    }
-})
+        footer.innerHTML += `${quotes[i].quote} -${quotes[i].author}`;
+}
+}
+
+//add event listener to footer that makes it rewrite innerHTML 
+window.addEventListener('load', () => {
+        setInterval(marquee(), 30000);
+});
