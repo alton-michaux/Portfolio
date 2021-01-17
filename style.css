@@ -2,10 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .grandparent {
+  display: flex;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -71,7 +72,6 @@
 
 .svg {
   z-index: 1000;
-  bottom: 0;
 }
 
 .footer {
@@ -85,9 +85,47 @@
   color: white;
 }
 
-@media screen and (min-width: 250px) {
+@media screen and (max-width: 800px) {
+* {
+  overflow-y: auto;
+}
 
+body {
+  border: solid 1px rgb(13, 48, 122);
+}
 
-@media screen and (min-width: 1024px) {
+.nav-bar {
+  width: 80%;
+  height: 60px;
+  align-content: space-around;
+}
+
+.nav-list {
+  padding: 5px;
+}
+
+.list-items {
+  font-size: 1em;
+}
+
+.greet {
+  top: 170px;
+}
+
+.sub-greet {
+ top: 130px;
+}
+
+.svg {
+  display: flex;
+}
+
+.footer {
+  bottom: 0;
+  height: 40px;
+  background-color: rgb(13, 48, 122);
+}
+
+@media screen and (min-width: 800px) {
 
 }
