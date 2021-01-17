@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .grandparent {
@@ -10,12 +11,12 @@
   height: 100vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU);
   background-repeat: no-repeat;
-  /* background-size: 100%; */
   background-color: #050525;
   background-blend-mode: lighten;
+  font-family: 'Lato', sans-serif;
 }
 
-.parent {
+.nav-bar {
   position: absolute;
   float: right;
   top: 0px;
@@ -42,6 +43,31 @@
 .list-items > a {
   text-decoration: none;
   color: white;
+}
+
+.main-page {
+  position: relative;
+  height: inherit;
+  width: inherit;
+}
+
+.greet {
+  position: relative;
+  top: 250px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+.sub-greet {
+  position: relative;
+  top: 250px;
+  padding: 40px;
+  margin: 50px;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  border: solid 1px white;
 }
 
 @media screen and (min-width: 250px) {
