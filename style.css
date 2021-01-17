@@ -78,8 +78,11 @@
   position: absolute;
   width: 100%;
   height: 30px;
+  padding: 2px;
   bottom: 0;
   background-color: #050525;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (min-width: 250px) {
