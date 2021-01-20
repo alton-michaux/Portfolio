@@ -90,6 +90,7 @@
   text-align: center;
   color: white;
   border: solid 1.5px rgb(87, 82, 82);
+  font-family: 'Lato', sans-serif;
 }
 
 @media screen and (max-width: 800px) {
