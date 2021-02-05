@@ -1,6 +1,6 @@
 const projects = {
-  apps: ["weather.html", "rsvpApp.html"],
-  games: ["breakout.html", "battleship.html"],
+  apps: ["weather-app/index.html", "rsvp-app/index.html"],
+  games: ["games/breakout.html", "games/battleship.html"],
 };
 
 const projectOptions = document

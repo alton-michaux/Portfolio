@@ -5,9 +5,11 @@
   overflow-x: hidden;
 }
 
+p {
+  padding-top: 20px;
+}
+
 .grandparent {
-  display: flex;
-  position: relative;
   width: 100%;
   height: 100vh;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU);
@@ -20,6 +22,7 @@
 .nav-bar {
   position: absolute;
   float: right;
+  z-index: 1000;
   top: 0px;
   right: 0px;
   width: 900px;
@@ -35,7 +38,6 @@
 }
 
 .list-items {
-  flex-direction: row;
   margin: 0 auto;
   padding: 10px;
   font-size: 1.25em;
@@ -47,20 +49,26 @@
 }
 
 .main-page {
-  position: relative;
-  height: inherit;
-  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page-greet-box {
+  position: sticky;
+  overflow-y: hidden;
+  height: 120%;
 }
 
 .greet {
   position: relative;
   top: 250px;
-  margin: 5px;
+  margin: 15px;
   text-align: center;
   color: white;
 }
 
 .select-box {
+  position: sticky;
   display: flex;
   margin-top: 250px;
   width: 100%;
@@ -91,6 +99,7 @@
 }
 
 .svg-1 {
+  display: flex;
   z-index: 0;
   background-color: rgb(13, 48, 122);
 }
@@ -109,7 +118,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 
 body {
   border: solid 1px rgb(13, 48, 122);

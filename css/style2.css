@@ -1,0 +1,386 @@
+/*tag settings*/
+
+/*used global box-sizing to include all divs*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*set flex specifications for body of html document to make all children flex items and set font*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #556d77;
+  background-image: url("https://cdn.wallpapersafari.com/88/55/wGHkyg.jpg");
+  background-blend-mode: multiply;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/*set title bar specifications for text headings*/
+h2 {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+  background-color: #0a202a;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*styling for project display blocks*/
+canvas {
+  display: block;
+  align-self: center;
+  width: 100%;
+  border: 3px solid black;
+  background-color: black;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*styling for spotify player (footer)*/
+iframe {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  opacity: 75%;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*=================================================*/
+
+/*class settings*/
+
+/*main header includes nav and logo elements*/
+.main-header {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #0A202A;
+}
+
+/*div for logo on left side of nav bar*/
+.name {
+  align-self: start;
+}
+
+.logo {
+  text-align: center;
+  font-size: 20px;
+  background-color: #243841;
+  border: solid 1px #0A202A;
+  margin-left: 1.5em;
+  padding: 10px;
+  opacity: 80%;
+  box-shadow: 0px 0px 4px black;
+}
+
+.nav {
+  list-style-type: none;
+  margin-right: 1.5em;
+  padding: 10;
+  color: black;
+  background-color: #556d77;
+  opacity: 80%;
+}
+
+/*nav bar links*/
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*menu button*/
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: white;
+  display: block;
+  margin-top: 4px;
+}
+
+/*css properties for main image*/
+.img {
+  width: 20%;
+  border: solid 2px #0a202a;
+  clip-path: polygon(0% 100%, 1% 1%, 99% 0%);
+}
+
+/*styling for div containing img and background*/
+.head-div {
+  position: relative;
+  width: 60%;
+  margin-left: 30px;
+}
+
+/*secondary 'web developer' heading*/
+.role {
+  color: white;
+  width: 75%;
+  align-self: center;
+}
+
+/*div containing 'experience' and 'projects' div*/
+.portfolio {
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 40px;
+}
+
+/*div containing competent languages ol*/
+.list-div {
+  margin-top: 20px;
+}
+
+/*ol of competent languages settings*/
+.stats {
+  margin: 20px;
+  padding: 15px;
+  padding-top: 25px;
+  list-style-type: none;
+  flex: 1 5 200px;
+  flex-direction: column;
+  line-height: 2em;
+  border: double 4px white;
+  background-color: #3c545e;
+  box-shadow: 0px 0px 8px black;
+}
+
+/*individual list items for competent languages list*/
+.stats li {
+  color: white;
+  margin: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #172f39;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*changes color of nav and comp-lang links upon hover*/
+.nav a:hover,
+.stats a:hover {
+  color: #0d96eb;
+}
+
+/*settings for h2's over 'experience' and 'project' divs*/
+.col-titles {
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/*project-grid div*/
+.project-grid {
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px black;
+}
+
+/*individual divs for project display grid*/
+.project-block {
+  width: 99%;
+  margin: 0 auto;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.text {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.proBlock:hover {
+  transform: scale(1.3);
+}
+
+/*=================================================*/
+
+/*id settings*/
+
+/* sidebar div*/
+#sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10em;
+  z-index: 1000;
+  transform: translateX(1em);
+  transition: .8s ease-out;
+}
+
+/* toggle button */
+#sidebar.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+
+/*sidebar active(clicked)*/
+#sidebar.active {
+  right: 0;
+  transform: translateX(-1em);
+  transition: 0.8s ease-in;
+}
+
+/*nav bar div*/
+#sidebar ul {
+  position: relative;
+  flex-direction: column;
+  margin-top: -0.7em;
+  margin-right: 1.2em;
+  text-decoration: none;
+}
+
+/*individual menu items*/
+#sidebar ul li {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 24px 20px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*changes link position on hover*/
+#sidebar ul li:hover {
+  box-shadow: 0px 0px 4px black;
+}
+
+/*=================================================*/
+
+/*special instructions for smaller screens*/
+@media screen and (min-width: 250px) {
+  .main-header,
+  .nav,
+  .row,
+  .stats,
+  .col,
+  .embed {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .head-div {
+    flex-direction: column;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    flex: 2 1 250px;
+  }
+
+  .projects {
+    margin: 0 auto;
+    width: 95%;
+    flex: 1 2 250px;
+  }
+
+  .canvas-container {
+    display: grid;
+  }
+
+  .project-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0 0;
+    padding: 0;
+    background-color: #141b1d;
+    margin-top: 5px;
+    grid-template-columns: 350px;
+  }
+
+  #sidebar {
+    position: absolute;
+    height: 10em;
+    right: -10em;
+    transition: 1.94ms;
+  }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+  }
+
+  #sidebar ul li:hover {
+    box-shadow: none;
+  }
+
+  #btn.active {
+    opacity: 0%;
+  }
+}
+
+/*instructions for medium to large screens*/
+
+@media screen and (min-width: 1024px) {
+  .main-header {
+    flex-direction: inherit;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .portfolio {
+    flex-direction: row;
+  }
+  /*flex specifications for .col divs*/
+
+  .experience {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 168px;
+    width: 25%;
+    text-align: center;
+    flex: 1 1 250px;
+  }
+
+  /*flex specifications for .row divs*/
+
+  .projects {
+    flex: 3 1 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 170px;
+    margin-bottom: auto;
+    width: 100%;
+  }
+
+  .canvas-container {
+    display: grid;
+    width: 100%;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-gap: 0 0;
+    padding: 0;
+    background-color: #202f36;
+    margin-top: 15px;
+    grid-template-columns: 350px 350px;
+  }
+
+  #sidebar.active .toggle-btn {
+    opacity: 50%;
+  }
+}
