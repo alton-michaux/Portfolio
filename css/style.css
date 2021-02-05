@@ -48,11 +48,6 @@ p {
   color: white;
 }
 
-.main-page {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-page-greet-box {
   position: sticky;
   overflow-y: hidden;
@@ -72,12 +67,12 @@ p {
   display: flex;
   margin-top: 250px;
   width: 100%;
-  /* height: 20%; */
+  height: 20%;
   justify-content: center;
 }
 
 .project-pulldown {
-  position: relative;
+  position: sticky;
   opacity: 50%;
   border: 1px solid white;
   width: 20%;
