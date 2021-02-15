@@ -19,6 +19,10 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+.main-page {
+  position: relative;
+}
+
 .nav-bar {
   position: absolute;
   float: right;
@@ -49,9 +53,12 @@ p {
 }
 
 .main-page-greet-box {
-  position: sticky;
+  position: fixed;
+  top: 0;
   overflow-y: hidden;
-  height: 120%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .greet {
@@ -84,17 +91,15 @@ p {
   font-size: 1em;
 }
 
-/* .project-pulldown:hover {
-  border: dotted 1px rgb(63, 173, 177) ;
-} */
-
 .svg {
   display: flex;
-  z-index: 1000;
+  position: relative;
+  z-index: 0;
+  top: 50%;
 }
 
 .svg-1 {
-  display: flex;
+  position: relative;
   z-index: 0;
   background-color: rgb(13, 48, 122);
 }
