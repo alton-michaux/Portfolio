@@ -9,6 +9,11 @@ p {
   padding-top: 20px;
 }
 
+.list-items:hover,
+.projects:hover {
+  cursor: pointer;
+}
+
 .grandparent {
   width: 100%;
   height: 100vh;
@@ -76,11 +81,13 @@ p {
   width: 100%;
   height: 20%;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .project-pulldown {
   position: sticky;
-  opacity: 50%;
+  opacity: 80%;
+  height: 30%;
   border: 1px solid white;
   width: 20%;
   padding: 5px;
@@ -94,12 +101,17 @@ p {
 .svg {
   display: flex;
   position: relative;
+  flex: 1 1 1200px;
+  opacity: 75%;
   z-index: 0;
   top: 50%;
 }
 
 .svg-1 {
+  display: flex;
   position: relative;
+  flex: 1 1 1200px;
+  opacity: 75%;
   z-index: 0;
   background-color: rgb(13, 48, 122);
 }
@@ -118,10 +130,14 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
 
 body {
   border: solid 1px rgb(13, 48, 122);
+}
+
+.main-page {
+  height: 100%;
 }
 
 .nav-bar {
@@ -146,10 +162,17 @@ body {
 
 .project-pulldown {
  width: 40%;
+ font-size: 1em;
 }
 
 .svg {
-  display: flex;
+  position: absolute;
+  top: 13.3em;
+}
+
+.svg-1 {
+  position: absolute;
+  top: 20em;
 }
 
 .footer {
@@ -158,8 +181,4 @@ body {
   background-color: rgb(13, 48, 122);
   border: none;
 }
-}
-
-@media screen and (min-width: 800px) {
-
 }
