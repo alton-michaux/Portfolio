@@ -4,15 +4,6 @@
   padding: 0;
 }
 
-p {
-  padding-top: 20px;
-}
-
-.list-items:hover,
-.projects:hover {
-  cursor: pointer;
-}
-
 .grandparent {
   width: 100%;
   height: 100vh;
@@ -21,10 +12,6 @@ p {
   background-color: #050525;
   background-blend-mode: lighten;
   font-family: 'Lato', sans-serif;
-}
-
-.main-page {
-  position: relative;
 }
 
 .nav-bar {
@@ -41,8 +28,6 @@ p {
 .nav-list {
   display: flex;
   list-style: none;
-  height: inherit;
-  border: solid 1.5px rgb(87, 82, 82);
 }
 
 .list-items {
@@ -56,13 +41,18 @@ p {
   color: white;
 }
 
+.list-items:hover,
+.projects:hover {
+  cursor: pointer;
+}
+
 .main-page-greet-box {
   position: fixed;
   top: 0;
   overflow-y: hidden;
   width: 100%;
   height: 100%;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .greet {
