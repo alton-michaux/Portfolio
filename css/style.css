@@ -46,7 +46,7 @@ option:first {
 }
 
 .list-items:hover,
-.projects:hover {
+.project-pulldown {
   cursor: pointer;
 }
 
@@ -93,16 +93,17 @@ option:first {
   display: grid;
   position: absolute;
   grid-template-columns: minmax(100px, 1fr);
+  margin: 0 auto;
   bottom: 5%;
   left: 0;
   right: 0;
+  width: 70%;
 }
 
 .project-display {
   height: 6em;
   width: 100%;
   background-color: black;
-  border: 1px solid rgb(13, 48, 122);
 }
 
 .svg {
@@ -125,14 +126,13 @@ option:first {
 
 .footer {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 30px;
   padding: 2px;
   bottom: 0;
-  background-color: #050525;
+  background-color: rgb(13, 48, 122, .9);
   text-align: center;
   color: white;
-  border: solid 1.5px rgb(87, 82, 82);
   font-family: 'Lato', sans-serif;
   z-index: 1000;
 }
