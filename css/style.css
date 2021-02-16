@@ -90,20 +90,40 @@ option:first {
 }
 
 .canvas-grid {
-  display: grid;
-  position: absolute;
-  grid-template-columns: minmax(100px, 1fr);
+  position: relative;
   margin: 0 auto;
-  bottom: 5%;
+  bottom: 8%;
   left: 0;
   right: 0;
   width: 70%;
 }
 
 .project-display {
+  position: absolute;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border: 1px solid white;
   height: 6em;
   width: 100%;
   background-color: black;
+}
+
+.project-link {
+  position: relative;
+  height: inherit;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+.project-blocks {
+  height: 6em;
+  width: 100%;
+}
+
+.thumbnail {
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
 }
 
 .svg {
@@ -137,8 +157,8 @@ option:first {
   z-index: 1000;
 }
 
-#app-canvas,
-#game-canvas {
+#app-div,
+#game-div {
   display: none;
 }
 
