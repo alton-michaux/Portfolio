@@ -89,6 +89,22 @@ option:first {
   font-size: 1em;
 }
 
+.canvas-grid {
+  display: grid;
+  position: absolute;
+  grid-template-columns: minmax(100px, 1fr);
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.project-display {
+  height: 6em;
+  width: 100%;
+  background-color: black;
+  border: 1px solid rgb(13, 48, 122);
+}
+
 .svg {
   display: flex;
   position: relative;
@@ -113,12 +129,17 @@ option:first {
   height: 30px;
   padding: 2px;
   bottom: 0;
-  opacity: 75%;
   background-color: #050525;
   text-align: center;
   color: white;
   border: solid 1.5px rgb(87, 82, 82);
   font-family: 'Lato', sans-serif;
+  z-index: 1000;
+}
+
+#app-canvas,
+#game-canvas {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
