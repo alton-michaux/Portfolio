@@ -102,17 +102,16 @@ option:first {
 .project-display {
   position: absolute;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  border: 1px solid white;
   height: 6em;
   width: 100%;
-  background-color: black;
 }
 
 .project-link {
   position: relative;
   height: inherit;
   text-decoration: none;
-  border: 1px solid white;
+  border: .25px solid white;
+  margin: 0 10px;
 }
 
 .project-blocks {
