@@ -110,21 +110,38 @@ option:first {
   position: relative;
   height: inherit;
   text-decoration: none;
-  border: .25px solid white;
+  /* border: .25px solid white; */
   margin: 0 10px;
 }
 
+.project-blocks-1,
 .project-blocks {
+  position: absolute;
   height: 6em;
   width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.project-blocks:hover,
+.project-blocks-1:hover {
+  transform: scale(1.03);
+  border: .5px solid white;
 }
 
 .thumbnail {
+  background-color: transparent;
+  object-fit: fill;
   display: block;
   top:0;
   left:0;
   height: 100%;
   width: 100%;
+}
+
+.text {
+  position: relative;
+  color: white;
 }
 
 .svg {
@@ -205,7 +222,7 @@ body {
 
 .svg {
   position: sticky;
-  top: 11.82em;
+  top: 12.2em;
 }
 
 .svg-1 {
