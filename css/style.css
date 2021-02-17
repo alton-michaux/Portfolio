@@ -96,6 +96,7 @@ option:first {
   left: 0;
   right: 0;
   width: 70%;
+  height: 16%;
 }
 
 .project-display {
@@ -120,6 +121,7 @@ option:first {
 }
 
 .thumbnail {
+  display: block;
   top:0;
   left:0;
   height: 100%;

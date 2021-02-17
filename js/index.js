@@ -1,50 +1,25 @@
-//create a controller to store project information for canvas display
-const projectInfo = (function () {
-  const filePath = {
-    spotify: "../Project-Spotify-Playlist-App-/index.html",
-    weather: "../Project-Weather-App-/index.html",
-    rsvp: "../Project-RSVP-App-/index.html",
-    breakout: "../Project-Breakout-Game-/index.html",
-    battleship: "../Project-Battleship-Game-/index.html",
-  };
+const spotifyImg = new Image();
+spotifyImg.src = "../images/spotify.png";
+spotifyImg.alt = "spotify playlist app";
 
-  const imagePath = {
-    spotify: "../images/spotify.png",
-    weather: "../images/weather.png",
-    rsvp: "../images/Rsvp.png",
-    breakout: "../images/Breakout.png",
-    battleship: "../images/battleship.png",
-  };
+const weatherImg = new Image();
+weatherImg.src = "../images/weather.png";
+weatherImg.alt = "weather app";
 
-  return {
-    appSelectors() {
-      return {
-        spotify: filePath.spotify,
-        weather: filePath.weather,
-        rsvp: filePath.rsvp,
-      };
-    },
-    gameSelectors() {
-      return {
-        breakout: filePath.breakout,
-        battleship: filePath.battleship,
-      };
-    },
-    appImageSelectors() {
-      return {
-        spotify: imagePath.spotify,
-        weather: imagePath.weather,
-        rsvp: imagePath.weather,
-      };
-    },
-    gameImageSelectors() {
-      return {
-        breakout: imagePath.breakout,
-        battleship: imagePath.battleship,
-      };
-    },
-  };
-})();
+const rsvpImg = new Image();
+rsvpImg.src = "../images/Rsvp.png";
+rsvpImg.alt = "rsvp app";
+
+const breakoutImg = new Image();
+breakoutImg.src = "../images/Breakout.png";
+breakoutImg.alt = "breakout game";
+
+const battleshipImg = new Image();
+battleshipImg.src = "../images/battleship.png";
+battleshipImg.alt = "battleship game";
+
+const apps = [spotifyImg, weatherImg, rsvpImg];
+const games = [breakoutImg, battleshipImg];
 
 //create a controller to handle dom element selection
 const uiController = (function () {
@@ -67,36 +42,36 @@ const uiController = (function () {
       };
     },
 
-    placeOnAppGrid(image, filePath) {
-      const html = `<a class="project-link" href="${filePath}"><canvas class="project-blocks" id="apps"><img class="thumbnail" src=${image} alt=${filePath}/></canvas></a>`;
-      document
-        .querySelector(domElements.appDiv)
-        .insertAdjacentHTML("beforeend", html);
+    placeAppImages(arr) {
+      for (i = 0; i < arr.length; i++) {
+        let appContext = document.querySelector("#apps").getContext("2d");
+        // console.log(appContext)
+        arr[i].onload = () => {
+          appContext.drawImage(arr[i], 20, 10, 300, 300, 0, 0, 200, 200);
+      }
+      };
+      console.log("placing image...");
     },
 
-    placeOnGameGrid(image, filePath) {
-      const html = `<a class="project-link" href="${filePath}"><canvas class="project-blocks" id="games"><img class="thumbnail" src=${image} alt=${filePath}/></canvas></a>`;
-      document
-        .querySelector(domElements.gameDiv)
-        .insertAdjacentHTML("beforeend", html);
+    placeGameImages(image) {
+      for (i = 0; i < arr.length; i++) {
+        let gameContext = document.querySelector("#games").getContext("2d");
+        // console.log(appContext)
+        arr[i].onload = () => {
+          gameContext.drawImage(arr[i], 20, 10, 300, 300, 0, 0, 200, 200);
+      }
+      };
+      console.log("placing image...");
     },
 
     resetCanvas() {
-      domElements.projectDisplay.innerHTML = "";
-      console.log('reset!');
+      const projectDiv = domElements.projectDisplay;
+      projectDiv.innerHTML = "";
     },
-    }
-  })();
+  };
+})();
 
-const pageFunctions = (function (proInfo, uiCtrl) {
-  //----Information selectors----//
-  //create a variable to select app file paths
-  const appSelector = proInfo.appSelectors();
-  const appImageSelector = proInfo.appImageSelectors();
-  //create a variable to select game file paths
-  const gameSelector = proInfo.gameSelectors();
-  const gameImageSelector = proInfo.gameImageSelectors();
-
+const pageFunctions = (function (uiCtrl) {
   //---DOM selectors---//
 
   //create a variable to select dom elements from ui controller
@@ -116,32 +91,14 @@ const pageFunctions = (function (proInfo, uiCtrl) {
       appDiv.style.border = "1px solid rgb(13, 48, 122)";
       appDiv.style.display = "grid";
       gameDiv.style.display = "none";
-      for (const app in appSelector) {
-        for (const image in appImageSelector) {
-          uiCtrl.placeOnAppGrid(image, app);
-          let appContext = document.querySelector("#apps").getContext("2d");
-          // console.log(appContext)
-          image.onload = () => {
-            appContext.drawImage(image, 20, 10, 1300, 1300, 0, 0, 300, 336)
-          }
-        }
-      }
+      uiCtrl.placeAppImages(apps);
     } else {
       uiCtrl.resetCanvas();
       console.log("You picked Games!");
       gameDiv.style.border = "1px solid rgb(46, 65, 105)";
       gameDiv.style.display = "grid";
       appDiv.style.display = "none";
-      for (const game in gameSelector) {
-        for (const image in gameImageSelector) {
-          uiCtrl.placeOnGameGrid(image, game);
-          let gameContext = document.querySelector("#games").getContext("2d");
-          // console.log(appContext)
-          image.onload = () => {
-            gameContext.drawImage(image, 20, 10, 1300, 1300, 0, 0, 300, 336)
-          }
-        }
-      }
+      uiCtrl.placeGameImages(games);
     }
   });
-})(projectInfo, uiController);
+})(uiController);
