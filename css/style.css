@@ -32,16 +32,8 @@ body {
   width: 900px;
   height: 50px;
   background-color: rgb(13, 48, 122);
-<<<<<<< HEAD
   box-shadow: rgb(39, 54, 87) -1px 2px 13px;
-<<<<<<< HEAD
-  border-radius: 50%;
-=======
-  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
->>>>>>> main
-=======
   border-radius: 70%;
->>>>>>> e3632bafdef24c928dcd5de587318b0b3c1e8d0b
 }
 
 .nav-list {
@@ -121,15 +113,11 @@ body {
   background-color: #31313f;
   color: white;
   font-size: 1em;
-<<<<<<< HEAD
-  top: 0;
-=======
   box-shadow: rgb(13, 48, 122) -1px 2px 13px;
 }
 
 .project-pulldown::after {
   border: none;
->>>>>>> main
 }
 
 .canvas-grid {
@@ -169,10 +157,6 @@ body {
 .project-blocks:hover,
 .project-blocks-1:hover {
   transform: scale(1.03);
-<<<<<<< HEAD
-=======
-  border: 0.5px solid white;
->>>>>>> main
 }
 
 .thumbnail {
@@ -228,7 +212,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-<<<<<<< HEAD
 
 body {
   border: solid 1px rgb(13, 48, 122);
@@ -292,71 +275,10 @@ body {
   height: 40px;
   background-color: rgb(13, 48, 122);
   border: none;
-=======
-  body {
-    border: solid 1px rgb(13, 48, 122);
-    overflow: hidden;
-  }
-
-  .main-page {
-    height: 100%;
-  }
-
-  .nav-bar {
-    width: 80%;
-    height: 60px;
-    align-content: space-around;
-  }
-
-  .nav-list {
-    padding: 5px;
-  }
-
-  .list-items {
-    font-size: 1em;
-    overflow: hidden;
-  }
-
-  .greet {
-    top: 250px;
-    font-size: 1.5em;
-  }
-
-  .project-pulldown {
-    width: 40%;
-    font-size: 1em;
-  }
-
-  ::placeholder {
-    color: black;
-  }
-
-  .svg {
-    position: sticky;
-    top: 12.2em;
-  }
-
-  .svg-1 {
-    position: sticky;
-    top: 20em;
-    height: 50%;
-  }
-
-  .footer {
-    position: sticky;
-    bottom: 0;
-    height: 40px;
-    background-color: rgb(11, 44, 116);
-    border: none;
-  }
->>>>>>> main
 }
-<<<<<<< HEAD
-=======
 
 .mobile-hide {
   display: none;
 }
 
 }
->>>>>>> e3632bafdef24c928dcd5de587318b0b3c1e8d0b
