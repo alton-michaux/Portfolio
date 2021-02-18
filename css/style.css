@@ -27,7 +27,12 @@ option:first {
   width: 900px;
   height: 50px;
   background-color: rgb(13, 48, 122);
+<<<<<<< HEAD
+  box-shadow: rgb(39, 54, 87) -1px 2px 13px;
+  border-radius: 50%;
+=======
   box-shadow: rgb(13, 48, 122) -1px 2px 13px;
+>>>>>>> main
 }
 
 .nav-list {
@@ -52,7 +57,7 @@ option:first {
 }
 
 .main-page-greet-box {
-  position: fixed;
+  position: absolute;
   top: 0;
   overflow-y: hidden;
   width: 100%;
@@ -60,16 +65,31 @@ option:first {
   z-index: 999;
 }
 
+.contact-items {
+  list-style-type: none;
+}
+
+.contact-items a {
+  text-decoration: none;
+  color: white;
+  line-height: 2em;
+}
+
+.contact-items a:hover {
+  color: magenta;
+}
+
 .greet {
   position: relative;
-  top: 250px;
   margin: 15px;
   text-align: center;
   color: white;
+  top: 25%;
+  height: 6%;
 }
 
 .select-box {
-  position: sticky;
+  position: relative;
   display: flex;
   margin-top: 250px;
   width: 100%;
@@ -78,26 +98,30 @@ option:first {
 }
 
 .project-pulldown {
-  position: sticky;
+  position: absolute;
   opacity: 80%;
   height: 30%;
   width: 20%;
   padding: 5px;
-  margin: 20px;
+  margin: 2px;
   background-color: #31313f;
   color: white;
   font-size: 1em;
+<<<<<<< HEAD
+  top: 0;
+=======
   box-shadow: rgb(13, 48, 122) -1px 2px 13px;
 }
 
 .project-pulldown::after {
   border: none;
+>>>>>>> main
 }
 
 .canvas-grid {
   position: relative;
   margin: 0 auto;
-  bottom: 8%;
+  bottom: 10%;
   left: 0;
   right: 0;
   width: 70%;
@@ -115,7 +139,6 @@ option:first {
   position: relative;
   height: inherit;
   text-decoration: none;
-  /* border: .25px solid white; */
   margin: 0 10px;
 }
 
@@ -132,12 +155,19 @@ option:first {
 .project-blocks:hover,
 .project-blocks-1:hover {
   transform: scale(1.03);
+<<<<<<< HEAD
+=======
   border: 0.5px solid white;
+>>>>>>> main
 }
+
+/* .project-blocks img {
+  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
+} */
 
 .thumbnail {
   background-color: transparent;
-  object-fit: fill;
+  object-fit: contain;
   display: block;
   top: 0;
   left: 0;
@@ -187,6 +217,71 @@ option:first {
 }
 
 @media screen and (max-width: 1200px) {
+<<<<<<< HEAD
+
+body {
+  border: solid 1px rgb(13, 48, 122);
+  overflow: hidden;
+}
+
+.main-page {
+  height: 100%;
+}
+
+.nav-bar {
+  width: 80%;
+  height: 60px;
+  align-content: space-around;
+}
+
+.nav-list {
+  padding: 5px;
+}
+
+.list-items {
+  font-size: 1em;
+  overflow: hidden;
+}
+
+.greet {
+  top: 30%;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.project-pulldown {
+ width: 40%;
+ font-size: 1em;
+ top: 0;
+}
+
+.canvas-grid {
+  bottom: 10%;
+  width: 90%;
+}
+
+::placeholder {
+  color: black;
+}
+
+.svg {
+  position: sticky;
+  top: 12.2em;
+}
+
+.svg-1 {
+  position: sticky;
+  top: 20em;
+  height: 50%;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  height: 40px;
+  background-color: rgb(13, 48, 122);
+  border: none;
+=======
   body {
     border: solid 1px rgb(13, 48, 122);
     overflow: hidden;
@@ -243,4 +338,5 @@ option:first {
     background-color: rgb(11, 44, 116);
     border: none;
   }
+>>>>>>> main
 }
