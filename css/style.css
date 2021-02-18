@@ -120,7 +120,7 @@ body {
 .canvas-grid {
   position: relative;
   margin: 0 auto;
-  bottom: 10%;
+  bottom: 8%;
   left: 0;
   right: 0;
   width: 70%;
@@ -216,7 +216,7 @@ body {
 }
 
 .main-page {
-  height: auto;
+  height: inherit;
 }
 
 .nav-bar {
@@ -242,20 +242,19 @@ body {
 
 .select-box {
   position: absolute;
-  top: 6%;
+  top: 5%;
 }
 
 .project-pulldown {
   position: relative;
   width: 40%;
   font-size: 1em;
-  top: 0;
 }
 
 .canvas-grid {
   position: absolute;
   width: 90%;
-  bottom: 19%;
+  bottom: 20%;
 }
 
 .svg {
@@ -273,4 +272,9 @@ body {
   background-color: rgb(13, 48, 122);
   border: none;
 }
+
+.mobile-hide {
+  display: none;
+}
+
 }
