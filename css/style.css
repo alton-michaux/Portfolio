@@ -8,7 +8,12 @@ option:first {
   color: grey;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .grandparent {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU");
@@ -19,7 +24,7 @@ option:first {
 }
 
 .nav-bar {
-  position: absolute;
+  position: sticky;
   float: right;
   z-index: 1000;
   top: 0px;
@@ -29,10 +34,14 @@ option:first {
   background-color: rgb(13, 48, 122);
 <<<<<<< HEAD
   box-shadow: rgb(39, 54, 87) -1px 2px 13px;
+<<<<<<< HEAD
   border-radius: 50%;
 =======
   box-shadow: rgb(13, 48, 122) -1px 2px 13px;
 >>>>>>> main
+=======
+  border-radius: 70%;
+>>>>>>> e3632bafdef24c928dcd5de587318b0b3c1e8d0b
 }
 
 .nav-list {
@@ -59,7 +68,7 @@ option:first {
 .main-page-greet-box {
   position: absolute;
   top: 0;
-  overflow-y: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   z-index: 999;
@@ -77,6 +86,11 @@ option:first {
 
 .contact-items a:hover {
   color: magenta;
+}
+
+.greet-wrapper {
+  position: sticky;
+  top: 35%;
 }
 
 .greet {
@@ -121,7 +135,7 @@ option:first {
 .canvas-grid {
   position: relative;
   margin: 0 auto;
-  bottom: 10%;
+  bottom: 12%;
   left: 0;
   right: 0;
   width: 70%;
@@ -161,10 +175,6 @@ option:first {
 >>>>>>> main
 }
 
-/* .project-blocks img {
-  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
-} */
-
 .thumbnail {
   background-color: transparent;
   object-fit: contain;
@@ -199,7 +209,7 @@ option:first {
 }
 
 .footer {
-  position: absolute;
+  position: sticky;
   width: 100vw;
   height: 30px;
   padding: 2px;
@@ -209,6 +219,7 @@ option:first {
   color: white;
   font-family: "Lato", sans-serif;
   z-index: 1000;
+  box-shadow: rgb(39, 54, 87) -1px 2px 13px;
 }
 
 #app-div,
@@ -221,11 +232,12 @@ option:first {
 
 body {
   border: solid 1px rgb(13, 48, 122);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .main-page {
-  height: 100%;
+  height: inherit;
 }
 
 .nav-bar {
@@ -244,35 +256,34 @@ body {
 }
 
 .greet {
-  top: 30%;
+  top: 35%;
   font-size: 1.5em;
   margin: 5px;
 }
 
+.select-box {
+  position: absolute;
+  top: 5%;
+}
+
 .project-pulldown {
- width: 40%;
- font-size: 1em;
- top: 0;
+  position: relative;
+  width: 40%;
+  font-size: 1em;
 }
 
 .canvas-grid {
-  bottom: 10%;
+  position: absolute;
   width: 90%;
-}
-
-::placeholder {
-  color: black;
+  bottom: 20%;
 }
 
 .svg {
-  position: sticky;
-  top: 12.2em;
+  display: none;
 }
 
 .svg-1 {
-  position: sticky;
-  top: 20em;
-  height: 50%;
+  display: none;
 }
 
 .footer {
@@ -340,3 +351,12 @@ body {
   }
 >>>>>>> main
 }
+<<<<<<< HEAD
+=======
+
+.mobile-hide {
+  display: none;
+}
+
+}
+>>>>>>> e3632bafdef24c928dcd5de587318b0b3c1e8d0b
