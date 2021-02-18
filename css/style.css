@@ -11,11 +11,11 @@ option:first {
 .grandparent {
   width: 100%;
   height: 100vh;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU");
   background-repeat: no-repeat;
   background-color: #050525;
   background-blend-mode: lighten;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .nav-bar {
@@ -27,8 +27,12 @@ option:first {
   width: 900px;
   height: 50px;
   background-color: rgb(13, 48, 122);
+<<<<<<< HEAD
   box-shadow: rgb(39, 54, 87) -1px 2px 13px;
   border-radius: 50%;
+=======
+  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
+>>>>>>> main
 }
 
 .nav-list {
@@ -97,14 +101,21 @@ option:first {
   position: absolute;
   opacity: 80%;
   height: 30%;
-  border: 1px solid white;
   width: 20%;
   padding: 5px;
   margin: 2px;
   background-color: #31313f;
   color: white;
   font-size: 1em;
+<<<<<<< HEAD
   top: 0;
+=======
+  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
+}
+
+.project-pulldown::after {
+  border: none;
+>>>>>>> main
 }
 
 .canvas-grid {
@@ -138,11 +149,16 @@ option:first {
   width: 100%;
   text-align: center;
   align-items: center;
+  box-shadow: rgb(13, 48, 122) -1px 2px 13px;
 }
 
 .project-blocks:hover,
 .project-blocks-1:hover {
   transform: scale(1.03);
+<<<<<<< HEAD
+=======
+  border: 0.5px solid white;
+>>>>>>> main
 }
 
 /* .project-blocks img {
@@ -153,8 +169,8 @@ option:first {
   background-color: transparent;
   object-fit: contain;
   display: block;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -188,10 +204,10 @@ option:first {
   height: 30px;
   padding: 2px;
   bottom: 0;
-  background-color: rgb(13, 48, 122, .9);
+  background-color: rgb(13, 48, 122, 0.9);
   text-align: center;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   z-index: 1000;
 }
 
@@ -201,6 +217,7 @@ option:first {
 }
 
 @media screen and (max-width: 1200px) {
+<<<<<<< HEAD
 
 body {
   border: solid 1px rgb(13, 48, 122);
@@ -264,5 +281,62 @@ body {
   height: 40px;
   background-color: rgb(13, 48, 122);
   border: none;
-}
+=======
+  body {
+    border: solid 1px rgb(13, 48, 122);
+    overflow: hidden;
+  }
+
+  .main-page {
+    height: 100%;
+  }
+
+  .nav-bar {
+    width: 80%;
+    height: 60px;
+    align-content: space-around;
+  }
+
+  .nav-list {
+    padding: 5px;
+  }
+
+  .list-items {
+    font-size: 1em;
+    overflow: hidden;
+  }
+
+  .greet {
+    top: 250px;
+    font-size: 1.5em;
+  }
+
+  .project-pulldown {
+    width: 40%;
+    font-size: 1em;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+
+  .svg {
+    position: sticky;
+    top: 12.2em;
+  }
+
+  .svg-1 {
+    position: sticky;
+    top: 20em;
+    height: 50%;
+  }
+
+  .footer {
+    position: sticky;
+    bottom: 0;
+    height: 40px;
+    background-color: rgb(11, 44, 116);
+    border: none;
+  }
+>>>>>>> main
 }

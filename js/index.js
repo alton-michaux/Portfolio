@@ -1,5 +1,6 @@
 //create a controller to handle dom element selection
 const uiController = (function () {
+  //element object
   const domElements = {
     dropdown: "#projects",
     projectDisplay: ".project-display",
@@ -7,9 +8,9 @@ const uiController = (function () {
     gameDiv: "#game-div",
   };
 
-  //   console.log("ui online");
-  //return a method that selects elements
+  //return methods
   return {
+    //return a method that selects elements
     domOutputs() {
       return {
         dropdown: document.querySelector(domElements.dropdown),
@@ -18,35 +19,37 @@ const uiController = (function () {
         gameDiv: document.querySelector(domElements.gameDiv),
       };
     },
-
-    resetCanvas() {
+    //return a method that resets the div whenever an option is selected
+    resetDivs() {
       const projectDiv = domElements.projectDisplay;
       projectDiv.innerHTML = "";
     },
   };
 })();
 
+//controller function that handles the actual events of the homepage
 const pageFunctions = (function (uiCtrl) {
   //---DOM selectors---//
-
   //create a variable to select dom elements from ui controller
   const domSelector = uiCtrl.domOutputs();
   //select dropdown element
   const dropdownMenu = domSelector.dropdown;
+  //select app and game divs
   const appDiv = domSelector.appDiv;
   const gameDiv = domSelector.gameDiv;
-  //console.log(appSelector, appImageSelector, gameSelector, gameImageSelector);
-  //----Event Listener----//
+  //----Dropdown Event Listener----//
   dropdownMenu.addEventListener("change", () => {
+    //get selected option
     const dropdownValue =
       dropdownMenu.options[dropdownMenu.selectedIndex].value;
+    //check the option and display/hide appropriate divs
     if (dropdownValue == "Apps") {
-      uiCtrl.resetCanvas();
+      uiCtrl.resetDivs();
       console.log("You picked Apps!");
       appDiv.style.display = "grid";
       gameDiv.style.display = "none";
     } else {
-      uiCtrl.resetCanvas();
+      uiCtrl.resetDivs();
       console.log("You picked Games!");
       gameDiv.style.display = "grid";
       appDiv.style.display = "none";
