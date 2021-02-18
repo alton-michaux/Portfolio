@@ -70,10 +70,10 @@ const battleship = () => {
     for (i = 0; i < max; i++) {
       let randX = Math.floor(Math.random()* 4);
       let randY = Math.floor(Math.random()* 4);
-      if (grid[randX][randY] !== " 1 ") {
+      console.log(randX, randY)
+      if (grid[randX][randY] !== "1") {
         grid[randX][randY] = ` ${c} `;
-      }
-      if (grid[randX][randY] == "1") {
+      } else if (grid[randX][randY] === "1") {
         i--;
       }
     }
