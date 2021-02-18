@@ -51,7 +51,7 @@ option:first {
 }
 
 .main-page-greet-box {
-  position: fixed;
+  position: absolute;
   top: 0;
   overflow-y: hidden;
   width: 100%;
@@ -59,16 +59,31 @@ option:first {
   z-index: 999;
 }
 
+.contact-items {
+  list-style-type: none;
+}
+
+.contact-items a {
+  text-decoration: none;
+  color: white;
+  line-height: 2em;
+}
+
+.contact-items a:hover {
+  color: magenta;
+}
+
 .greet {
   position: relative;
-  top: 250px;
   margin: 15px;
   text-align: center;
   color: white;
+  top: 25%;
+  height: 6%;
 }
 
 .select-box {
-  position: sticky;
+  position: relative;
   display: flex;
   margin-top: 250px;
   width: 100%;
@@ -77,22 +92,23 @@ option:first {
 }
 
 .project-pulldown {
-  position: sticky;
+  position: absolute;
   opacity: 80%;
   height: 30%;
   border: 1px solid white;
   width: 20%;
   padding: 5px;
-  margin: 20px;
+  margin: 2px;
   background-color: #31313f;
   color: white;
   font-size: 1em;
+  top: 0;
 }
 
 .canvas-grid {
   position: relative;
   margin: 0 auto;
-  bottom: 8%;
+  bottom: 10%;
   left: 0;
   right: 0;
   width: 70%;
@@ -207,13 +223,20 @@ body {
 }
 
 .greet {
-  top: 250px;
+  top: 30%;
   font-size: 1.5em;
+  margin: 5px;
 }
 
 .project-pulldown {
  width: 40%;
  font-size: 1em;
+ top: 0;
+}
+
+.canvas-grid {
+  bottom: 10%;
+  width: 90%;
 }
 
 ::placeholder {
