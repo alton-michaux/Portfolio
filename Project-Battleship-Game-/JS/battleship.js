@@ -74,10 +74,11 @@ const battleship = () => {
       console.log(randX, randY)
       if (grid[randX][randY] !== " 1 ") {
         grid[randX][randY] = ` ${c} `;
-      } if (grid[randX][randY] === " 1 ") {
-        i --;
-        console.log(i);
-      }
+      } 
+    //   if (grid[randX][randY] === " 1 ") {
+    //     i --;
+    //     console.log(i);
+    //   }
     }
   }
 
