@@ -68,14 +68,17 @@ const battleship = () => {
   //2. create a function to generate random coordinates for ships and place them as 1's on the grid
   function placeCharacters(c, grid, max) {
     for (i = 0; i < max; i++) {
+      console.log(i)
       let randX = Math.floor(Math.random()* 4);
       let randY = Math.floor(Math.random()* 4);
+      console.log(randX, randY)
       if (grid[randX][randY] !== " 1 ") {
         grid[randX][randY] = ` ${c} `;
-      }
-      if (grid[randX][randY] == "1") {
-        i--;
-      }
+      } 
+    //   if (grid[randX][randY] === " 1 ") {
+    //     i --;
+    //     console.log(i);
+    //   }
     }
   }
 
