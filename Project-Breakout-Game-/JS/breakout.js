@@ -1,30 +1,12 @@
 /*===============================================*/
-
-/*animate side menu*/
-
-//variables to select side menu items and button
-const sideBar = document.getElementById("sidebar");
-const toggleButton = document.getElementById("btn");
-
-/*Side menu button*/
-sideBar.addEventListener("click", () => {
-  sideBar.classList.toggle("active");
-  console.log("sideBar clicked")
-});
-
-toggleButton.addEventListener("click", () => {
-  toggleButton.classList.toggle("active");
-  console.log("toggleButton clicked")
-});
-
 /*===============================================*/
 
 //declare variables for html elements
 let canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-const rulesBtn = document.getElementById("rules-btn");
-const closeBtn = document.getElementById("close-btn");
-const rules = document.getElementById("rules");
+// const rulesBtn = document.getElementById("rules-btn");
+// const closeBtn = document.getElementById("close-btn");
+// const rules = document.getElementById("rules");
 
 //declare game variables
 let score = 0;
@@ -32,9 +14,9 @@ let brickRowCount = 9;
 let brickColumnCount = 5;
 
 //rules and close event handlers
-rulesBtn.addEventListener("click", () => rules.classList.add("show"));
+// rulesBtn.addEventListener("click", () => rules.classList.add("show"));
 
-closeBtn.addEventListener("click", () => rules.classList.remove("show"));
+// closeBtn.addEventListener("click", () => rules.classList.remove("show"));
 
 //objects
 //create ball object
