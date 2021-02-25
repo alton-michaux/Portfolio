@@ -9,10 +9,12 @@ const toggleButton = document.getElementById("btn");
 /*Side menu button*/
 sideBar.addEventListener("click", () => {
   sideBar.classList.toggle("active");
+  console.log("sideBar clicked")
 });
 
 toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("active");
+  console.log("toggleButton clicked")
 });
 
 /*===============================================*/
