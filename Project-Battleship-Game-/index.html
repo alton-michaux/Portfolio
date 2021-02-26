@@ -10,14 +10,21 @@
       content="The assignment for week 3 of Code the Dream's Web Basics 2 course."
     />
     <meta name="keywords" content="code the dream, ctd, web basics 2, week 3" />
+    <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="CSS/battleship.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     
-    <nav class="main-header">
+    <nav class="nav-bar">
         <h1 class="logo name">Alton Michaux</h1>
 
-      <div id="sidebar">
+      <div class="grandparent" id="sidebar">
         <div id="btn" class="toggle-btn">
           <span></span>
           <span></span>
@@ -40,10 +47,10 @@
       </div>
     </nav>
 
-    <main class="content-main">
+    <main class="content-main main-page">
       <h1>Battleship Game</h1>
-      <div class="game-container">
-        <p id="result">Game in progress...</p>
+      <div class="game-container main-page-greet-box">
+        <p class="greet" id="result">Game in progress...</p>
       </div>
     </main>
     <script src="JS/battleship.js"></script>

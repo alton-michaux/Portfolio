@@ -111,7 +111,7 @@ canvas {
   padding: 20px;
   line-height: 1.5;
   transform: translateX(-400px);
-  transition: transform 1s ease-in-out;
+  transition: width 1s ease-in-out 1s;
 }
 
 /*id settings*/
@@ -125,7 +125,7 @@ canvas {
   padding: 20px;
   line-height: 1.5;
   transform: translateX(300);
-  transition: transform 1s ease-in-out;
+  transition: width 1s ease-in-out 1s;
   background-image: repeating-linear-gradient(#CE8555, #853E10, #371600);
   text-decoration: #0095dd;
 }
