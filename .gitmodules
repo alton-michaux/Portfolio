@@ -1,9 +1,3 @@
-[submodule "Project-Weather-App-"]
-	path = Project-Weather-App-
-	url = https://github.com/codeGobbler/Weather-App.git
-[submodule "Project-Spotify-Playlist-App-"]
-	path = Project-Spotify-Playlist-App-
-	url = https://github.com/codeGobbler/Spotify-Playlist-App-.git
 [submodule "Project-Breakout-Game-"]
 	path = Project-Breakout-Game-
 	url = https://github.com/codeGobbler/Breakout-game-.git
