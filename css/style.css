@@ -214,7 +214,6 @@ body {
 @media screen and (max-width: 1200px) {
 
 body {
-  border: solid 1px rgb(13, 48, 122);
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -246,7 +245,7 @@ body {
 
 .select-box {
   position: absolute;
-  top: 5%;
+  top: 20%;
 }
 
 .project-pulldown {
