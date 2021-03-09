@@ -236,7 +236,6 @@ body {
 /*---Global Selectors---*/
 
 body {
-  border: solid 1px rgb(13, 48, 122);
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -259,6 +258,26 @@ body {
   margin: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.select-box {
+  position: absolute;
+  top: 20%;
+}
+
+.project-pulldown {
+  position: relative;
+  width: 40%;
+  font-size: 1em;
+}
+
+.canvas-grid {
+  position: absolute;
+  width: 90%;
+  bottom: 20%;
+}
+
+>>>>>>> 62c97c4ada52e4843c1365ce65f30a01313bd227
 .svg {
   display: none;
 }
