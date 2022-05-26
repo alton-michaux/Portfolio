@@ -45,12 +45,10 @@ const pageFunctions = (function (uiCtrl) {
     //check the option and display/hide appropriate divs
     if (dropdownValue == "Apps") {
       uiCtrl.resetDivs();
-      console.log("You picked Apps!");
       appDiv.style.display = "grid";
       gameDiv.style.display = "none";
     } else {
       uiCtrl.resetDivs();
-      console.log("You picked Games!");
       gameDiv.style.display = "grid";
       appDiv.style.display = "none";
     }
