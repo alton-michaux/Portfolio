@@ -46,10 +46,12 @@ const pageFunctions = (function (uiCtrl) {
     if (dropdownValue == "Apps") {
       uiCtrl.resetDivs();
       appDiv.style.display = "grid";
+      appDiv.style.padding = "20px";
       gameDiv.style.display = "none";
     } else {
       uiCtrl.resetDivs();
       gameDiv.style.display = "grid";
+      gameDiv.style.padding = "20px";
       appDiv.style.display = "none";
     }
   });
