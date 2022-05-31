@@ -249,14 +249,15 @@ body {
 }
 
 .greet {
+  text-justify: center;
   top: 35%;
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 5px;
 }
 
 .select-box {
   position: absolute;
-  top: 20%;
+  paddng-top: 50%;
 }
 
 .project-pulldown {
@@ -269,14 +270,6 @@ body {
   position: absolute;
   width: 90%;
   bottom: 20%;
-}
-
-.svg {
-  display: none;
-}
-
-.svg-1 {
-  display: none;
 }
 
 .footer {
