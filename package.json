@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeGobbler/Portfolio.git"
+    "url": "git+https://github.com/alton-michaux/Portfolio.git"
   },
   "keywords": [
     "resume",
@@ -17,7 +17,7 @@
   "author": "alton michaux",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codeGobbler/Portfolio/issues"
+    "url": "https://github.com/alton-michaux/Portfolio/issues"
   },
-  "homepage": "https://github.com/codeGobbler/Portfolio#readme"
+  "homepage": "https://github.com/alton-michaux/Portfolio#index.html"
 }
