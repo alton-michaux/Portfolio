@@ -1,4 +1,5 @@
 [build]
-  base = "/"
-  publish = "/"
-  command = ""
+  base = "/opt/build/repo"
+  commandOrigin: "ui"
+  publish: "/opt/build/repo"
+  publishOrigin: "config"
