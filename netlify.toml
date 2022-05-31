@@ -1,5 +1,5 @@
 [build]
   base = "/opt/build/repo"
   commandOrigin = "ui"
-  publish = "/opt/build/repo/_site"
+  publish = "_site"
   publishOrigin = "config"
