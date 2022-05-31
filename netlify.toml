@@ -1,5 +1,3 @@
 [build]
   base = "/opt/build/repo"
-  commandOrigin = "ui"
   publish = "_site"
-  publishOrigin = "config"
