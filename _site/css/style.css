@@ -45,6 +45,17 @@ body {
   top: 35%;
 }
 
+.main-page-greet-box {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: rgb(13, 48, 122); */
+  /* box-shadow: rgb(39, 54, 87) -1px 2px 13px; */
+}
+
 .greet {
   text-justify: center;
   top: 35%;
@@ -80,25 +91,29 @@ body {
 }
 
 .canvas-grid {
-  position: fixed;
-}
-
-/* .canvas-div {
   position: relative;
-  height: 100%;
-  width: 100%;
-} */
+  width: 87vw;
+  height: 1vh;
+}
 
 .project-display {
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  /* padding: 10px; */
+  height: 100%;
 }
 
 .project-link {
+  top: 3vh;
   position: relative;
-  height: inherit;
-  text-decoration: none;
-  margin: 0 10px;
+  height: 29vh;
+}
+
+.project-blocks {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me-page-greet-box {
