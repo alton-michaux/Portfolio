@@ -116,6 +116,16 @@ body {
   align-items: center;
 }
 
+.thumbnail {
+  background-color: transparent;
+  object-fit: contain;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+}
+
 .about-me-page-greet-box {
   top: 10em;
   height: 100%;
@@ -331,16 +341,6 @@ body {
   .project-blocks:hover,
   .project-blocks-1:hover {
     transform: scale(1.03);
-  }
-  
-  .thumbnail {
-    background-color: transparent;
-    object-fit: contain;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
   }
   
   .about-me-text-box {
