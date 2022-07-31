@@ -110,6 +110,10 @@ body {
   list-style: none;
 }
 
+.task-list {
+  list-style: none;
+}
+
 .list-items {
   margin: 0 auto;
   padding: 10px;
@@ -124,6 +128,13 @@ body {
 .list-items:hover,
 .project-pulldown {
   cursor: pointer;
+}
+
+.task-item {
+  margin: 0 auto;
+  padding: 10px;
+  font-size: .95em;
+  color: grey;
 }
 
 .contact-items {
