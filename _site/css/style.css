@@ -45,7 +45,7 @@ body {
   top: 35%;
 }
 
-.main-page-greet-box {
+/* .main-page-greet-box { */
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -54,7 +54,7 @@ body {
   /* height: 100%; */
   /* background-color: rgb(13, 48, 122); */
   /* box-shadow: rgb(39, 54, 87) -1px 2px 13px; */
-}
+/* } */
 
 .greet {
   text-justify: center;
@@ -166,7 +166,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 810px) {
+@media screen and (min-width: 920px) {
   /*---Global Selectors---*/
 
   * {
@@ -268,9 +268,9 @@ body {
   .select-box {
     position: relative;
     display: flex;
-    margin-top: 250px;
+    margin-top: 15em;
     width: 100%;
-    height: 20%;
+    height: 15%;
     justify-content: center;
   }
   
@@ -394,6 +394,13 @@ body {
     bottom: 0;
     width: 90%;
     bottom: 20%;
+  }
+
+  .select-box {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
   }
 
   .about-me-page-greet-box {
