@@ -16,7 +16,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* .main-page {
@@ -39,23 +38,10 @@ body {
   width: 100%;
   align-content: space-between;
 }
-
-.about-me-page-greet-box {
-  top: 6em;
-  height: 100%;
-  position: relative;
-}
-
-.main-page-greet-box {
-  /* list-style: none;
-  text-decoration: none; */
-  }
-
-.language-img-container {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  
+.greet-wrapper {
+  position: sticky;
+  top: 35%;
 }
 
 .greet {
@@ -66,13 +52,57 @@ body {
 }
 
 .select-box {
-  bottom: 5px;
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.list-items {
+  font-size: 1em;
+  overflow: hidden;
+}
+  
+.list-items > a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-pulldown {
+  position: absolute;
+  top: 0; bottom: 0; left: auto; right: auto;
+  width: 100%;
+  font-size: 1em;
+  opacity: 80%;
+  background-color: #31313f;
+  color: white;
 }
 
 .canvas-grid {
-  position: absolute;
-  width: 90%;
-  bottom: 20%;
+  position: fixed;
+}
+
+/* .canvas-div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+
+.project-display {
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  /* padding: 10px; */
+}
+
+.project-link {
+  position: relative;
+  height: inherit;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.about-me-page-greet-box {
+  top: 6em;
+  height: 100%;
+  position: relative;
 }
 
 .about-me-greet {
@@ -83,6 +113,13 @@ body {
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 90%;
   display: block;
+}
+
+.language-img-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -99,33 +136,15 @@ body {
   box-shadow: rgb(39, 54, 87) -1px 2px 13px;
 }
 
-.mobile-hide {
+/*--ID selectors--*/
+
+#app-div,
+#game-div {
   display: none;
 }
 
-/*---Components---*/
-
-.list-items {
-  font-size: 1em;
-  overflow: hidden;
-}
-
-.select-box {
-  position: absolute;
-  top: 5%;
-}
-
-.project-pulldown {
-  position: absolute;
-  top: 7em;
-  width: 40%;
-  font-size: 1em;
-}
-
-.canvas-grid {
-  position: absolute;
-  width: 90%;
-  bottom: 20%;
+.mobile-hide {
+  display: none;
 }
 
 @media screen and (min-width: 810px) {
@@ -177,19 +196,6 @@ body {
     height: 100%;
   }
   
-  .about-me-page-greet-box {
-    position: absolute;
-    top: 10em; right: 0px; left: 0px; bottom: 0px;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .greet-wrapper {
-    position: sticky;
-    top: 35%;
-  }
-  
   .greet {
     position: relative;
     margin: 15px;
@@ -199,39 +205,13 @@ body {
     height: 6%;
   }
   
-  .svg {
-    display: flex;
-    position: relative;
-    flex: 1 1 1200px;
-    opacity: 75%;
-    z-index: 0;
-    top: 50%;
+  .about-me-page-greet-box {
+    position: absolute;
+    top: 10em; right: 0px; left: 0px; bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
-  
-  .svg-1 {
-    display: flex;
-    position: relative;
-    flex: 1 1 1200px;
-    opacity: 75%;
-    z-index: 0;
-    background-color: rgb(13, 48, 122);
-  }
-  
-  .footer {
-    position: sticky;
-    width: 100vw;
-    height: 30px;
-    padding: 2px;
-    bottom: 0;
-    background-color: rgb(13, 48, 122, 0.9);
-    text-align: center;
-    color: white;
-    font-family: "Lato", sans-serif;
-    z-index: 1000;
-    box-shadow: rgb(39, 54, 87) -1px 2px 13px;
-  }
-  
-  /*---Components---*/
   
   .nav-list {
     display: flex;
@@ -246,11 +226,6 @@ body {
     margin: 0 auto;
     padding: 10px;
     font-size: 1.25em;
-  }
-  
-  .list-items > a {
-    text-decoration: none;
-    color: white;
   }
   
   .list-items:hover,
@@ -291,20 +266,21 @@ body {
   .project-pulldown {
     position: absolute;
     top: 0;
-    opacity: 80%;
     height: 30%;
     width: 20%;
     padding: 5px;
     margin-top: 0px;
     margin: 2px;
-    background-color: #31313f;
-    color: white;
     font-size: 1em;
     box-shadow: rgb(13, 48, 122) -1px 2px 13px;
   }
   
   .project-pulldown::after {
     border: none;
+  }
+
+  .canvas-div {
+    height: 0;
   }
   
   .canvas-grid {
@@ -356,6 +332,12 @@ body {
     width: 100%;
   }
   
+  .about-me-text-box {
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 30%;
+    display: block;
+  }
+  
   .text {
     position: relative;
     color: white;
@@ -368,22 +350,23 @@ body {
     height: 20%;
     grid-template-columns: repeat(4, minmax(50px, 1fr));
   }
-  
-  .about-me-text-box {
-    position: absolute;
-    top: 0; right: 0; left: 0; bottom: 30%;
-    display: block;
-  }
-  
-  /*--ID selectors--*/
-  
-  #app-div,
-  #game-div {
-    display: none;
-  }
 
   .mobile-hide {
     display: block;
+  }
+  
+  .footer {
+    position: sticky;
+    width: 100vw;
+    height: 30px;
+    padding: 2px;
+    bottom: 0;
+    background-color: rgb(13, 48, 122, 0.9);
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+    z-index: 1000;
+    box-shadow: rgb(39, 54, 87) -1px 2px 13px;
   }
 }
 
