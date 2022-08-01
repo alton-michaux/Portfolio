@@ -4,7 +4,7 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 /*---Layout---*/
@@ -16,12 +16,12 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8VekADq1TI5Ofzs4ljZSj4BH8LW0K7Um-cA&usqp=CAU");
+  background-image: url("../images/alton-members-only.jpg");
   background-repeat: no-repeat;
   background-color: #050525;
-  background-blend-mode: lighten;
+  background-blend-mode: screen;
+  background-size: cover;
   font-family: "Lato", sans-serif;
-  overflow: hidden;
 }
 
 .nav-bar {
@@ -44,17 +44,6 @@ body {
   position: sticky;
   top: 35%;
 }
-
-/* .main-page-greet-box { */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* background-color: rgb(13, 48, 122); */
-  /* box-shadow: rgb(39, 54, 87) -1px 2px 13px; */
-/* } */
 
 .greet {
   text-justify: center;
@@ -130,6 +119,7 @@ body {
   top: 10em;
   height: 100%;
   position: relative;
+  background-color: transparent;
 }
 
 .about-me-greet {
@@ -149,6 +139,16 @@ body {
   align-items: center;
   width: 100%;
   height: 20%;
+}
+  
+.contact-items {
+  list-style-type: none;
+}
+
+.contact-items a {
+  text-decoration: none;
+  color: white;
+  line-height: 2em;
 }
 
 .footer {
@@ -259,16 +259,6 @@ body {
     padding: 10px;
     font-size: .95em;
     color: grey;
-  }
-  
-  .contact-items {
-    list-style-type: none;
-  }
-  
-  .contact-items a {
-    text-decoration: none;
-    color: white;
-    line-height: 2em;
   }
   
   .contact-items a:hover {
@@ -416,9 +406,6 @@ body {
     font-size: 1em;
     text-align: center;
     padding: 5px;
-    box-shadow: rgb(13, 48, 122) -1px 2px 13px;
-    overflow-y: enable;
-    background-color: #050525;
   }
 
   .language-img-container {
