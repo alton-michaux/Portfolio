@@ -7,7 +7,6 @@ const uiController = (function () {
     appDiv: "#app-div",
     gameDiv: "#game-div",
   };
-
   //return methods
   return {
     //return a method that selects elements
