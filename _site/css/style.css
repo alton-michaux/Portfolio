@@ -16,7 +16,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../_site/Images/alton-members-only.jpg");
+  background-image: url("../../_site/Images/alton-members-only.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #050525;
@@ -197,7 +197,7 @@ body {
   .grandparent {
     display: block;
     position: relative;
-    background-image: url("../_site/Images/devices.jpg");
+    background-image: url("../../_site/Images/devices.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-color: #050525;
