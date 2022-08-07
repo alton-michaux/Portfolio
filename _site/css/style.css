@@ -71,6 +71,8 @@ body {
 }
 
 .project-pulldown {
+  position: absolute;
+  top: 0; bottom: 0; left: auto; right: auto;
   width: 100%;
   font-size: 1em;
   opacity: 80%;
@@ -276,9 +278,9 @@ body {
   }
   
   .project-pulldown {
-    position: relative;
-    top: 0; bottom: 0; left: auto; right: auto;
-    height: 40%;
+    position: absolute;
+    top: 0;
+    height: 30%;
     width: 20%;
     padding: 5px;
     margin-top: 0px;
@@ -378,8 +380,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .project-pulldown {
-    position: relative;
-    top: 10em;
+    position: absolute;
+    top: 0;
     width: 40%;
     font-size: 1em;
   }
