@@ -16,7 +16,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../images/alton-members-only.jpg");
+  background-image: url("../../_site/Images/alton-members-only.jpg");
   background-repeat: no-repeat;
   background-color: #050525;
   background-blend-mode: screen;
