@@ -58,8 +58,14 @@ body {
 
 .select-box {
   display: flex;
+  position: sticky;
+  height: 75%;
+}
+
+.text {
   position: relative;
-  height: 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .list-items {
@@ -342,11 +348,6 @@ body {
     position: absolute;
     top: 0; right: 0; left: 0; bottom: 30%;
     display: block;
-  }
-  
-  .text {
-    position: relative;
-    color: white;
   }
   
   .language-img-container {
