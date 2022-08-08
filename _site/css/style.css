@@ -10,6 +10,7 @@ body {
 /*---Layout---*/
 
 .grandparent {
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +27,7 @@ body {
 }
 
 .nav-bar {
+  z-index: 1;
   top: 0;
   position: fixed;
   height: 60px;
@@ -56,8 +58,14 @@ body {
 
 .select-box {
   display: flex;
+  position: sticky;
+  height: 75%;
+}
+
+.text {
   position: relative;
-  height: 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .list-items {
@@ -87,7 +95,7 @@ body {
 }
 
 .project-display {
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   height: 100%;
 }
 
@@ -273,7 +281,7 @@ body {
     display: flex;
     margin-top: 15em;
     width: 100%;
-    height: 15%;
+    height: 20%;
     justify-content: center;
   }
   
@@ -342,11 +350,6 @@ body {
     display: block;
   }
   
-  .text {
-    position: relative;
-    color: white;
-  }
-  
   .language-img-container {
     position: absolute;
     bottom: 30%; left: 0; right: 0;
@@ -395,7 +398,7 @@ body {
 
   .select-box {
     position: relative;
-    bottom: 0;
+    top: 5em;
     width: 100%;
     height: 20%;
   }
